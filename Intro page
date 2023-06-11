@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iVoteNow</title>
+  <style>
+    .container{
+        width: 100%;
+    }
+    header {
+      background-color: #000000;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 0px;
+      font-family: sans-serif;
+    }
+
+    .logo {
+      color: #fff;
+      font-weight: bold;
+      font-size: 24px;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
+
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navigation a {
+      color: #ffffff;
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: small;
+      font-family: sans-serif;
+    }
+
+    body {
+      text-align: center;
+      background-color: rgb(108, 255, 206);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 100px;
+      font-family: sans-serif;
+      margin-bottom: 0%;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-top: 0px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">iVoteNow</a>
+            <nav class="navigation">
+              <a href="#">Login</a>
+              <a href="#">Sign-up</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </header>
+    </div>
+
+  <h1>iVoteNow</h1>
+  <h3>Cast your vote with 100% trust!</h3>
+</body>
+</html>
