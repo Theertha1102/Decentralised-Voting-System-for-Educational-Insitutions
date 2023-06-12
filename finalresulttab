@@ -11,6 +11,7 @@
         <h1>College Union Election Results</h1>
         <ul id="results-list"></ul>
     </div>
+    <br><br><br>
     <div>
     <canvas id="myChart" width="400" height="400"></canvas>
 
