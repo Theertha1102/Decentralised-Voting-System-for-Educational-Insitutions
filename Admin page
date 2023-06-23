@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style media="screen">
+      *,
+      *:before,
+      *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+        background-color: rgb(141, 165, 157);
+        background-image: url('lib7.jpg');
+        background-size: 80%;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.13);
+        color: #000000;
+        padding: 10px 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0px;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        animation: slideIn 1s ease-in-out; /* Add animation properties */
+        height: 60px; /* Adjust the height as needed */
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+        }
+         100% {
+          transform: translateY(0);
+        }
+      }
+
+      .logo {
+        color: #000000;
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      .navigation {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .navigation a {
+        color: #000000;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: small;
+        font-size: 14px; /* Modify the font size */
+        font-weight: 500; /* Modify the font weight */
+        display: flex;
+        align-items: center;
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .button {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #ffffff;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #f2f2f2;
+      }
+
+      .results {
+        margin-top: 50px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .results p {
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#" class="logo">iVoteNow</a>
+            <nav class="navigation">
+              <a href="#login.html">Login</a>
+              <a href="#signup.html">Sign-up</a>
+              <a href="#contactus.html">Contact Us</a>
+              <a href="#logout.html">Logout</a>
+            </nav>
+        </header>
+        <button class="button">Start Election</button>
+        <button class="button">End Election</button>
+        <div class="results">
+            <h2>Results</h2>
+            <p>Candidate 1: 50%</p>
+            <p>Candidate 2: 30%</p>
+            <p>Candidate 3: 20%</p>
+            <button class="button">Show Results</button>
+        </div>
+    </div>
+</body>
+</html>
