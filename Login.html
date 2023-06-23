@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>iVoteNow</title>
+  <head>
+    <title>iVoteNow - Sign Up</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -20,22 +20,35 @@
       }
 
       header {
-        background-color: #8f8787;
+        background-color: rgba(255, 255, 255, 0.13);
         color: #000000;
-        padding: 5px;
+        padding: 10px 35px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-left: 0px;
+        font-family: 'Poppins', sans-serif;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        animation: slideIn 1s ease-in-out; /* Add animation properties */
+        height: 60px; /* Adjust the height as needed */
       }
-      
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-100%);
+        }
+         100% {
+          transform: translateY(0);
+        }
+      }
 
       .logo {
-        color: #fff;
+        color: #000000;
         font-weight: bold;
         font-size: 24px;
         text-decoration: none;
-        font-family: sans-serif;
       }
 
       .navigation {
@@ -44,15 +57,18 @@
       }
 
       .navigation a {
-        color: #ffffff;
+        color: #000000;
         margin-left: 10px;
         text-decoration: none;
         font-size: small;
-        font-family: sans-serif;
+        font-size: 14px; /* Modify the font size */
+        font-weight: 500; /* Modify the font weight */
+        display: flex;
+        align-items: center;
       }
 
       body {
-        text-align: left;
+        text-align: center;
         background-color: rgb(141, 165, 157);
         background-image: url('lib7.jpg');
         background-size: 80%;
@@ -92,34 +108,35 @@
         background-color: rgba(255, 255, 255, 0.13);
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 70%; 
+        top: 70%; /* Adjust the top value to create space between header and form */
         left: 50%;
         border-radius: 10px;
         backdrop-filter: blur(10px);
         border: 2px solid rgba(255, 255, 255, 0.1);
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
         padding: 50px 35px;
+        text-align: left; /* Align the form text to the left */
       }
 
       form * {
         font-family: 'Poppins', sans-serif;
-        color: #ffffff;
+        color: #000000;
         letter-spacing: 0.5px;
         outline: none;
         border: none;
       }
 
       form h3 {
+        align-items: center;
         font-size: 32px;
         font-weight: 500;
         line-height: 42px;
-        text-align: center;
-        margin-bottom: 30px; 
+        margin-bottom: 30px; /* Add margin bottom for spacing */
       }
 
       label {
         display: block;
-        margin-top: 15px; 
+        margin-top: 20px; /* Reduce margin top for tighter spacing */
         font-size: 16px;
         font-weight: 500;
       }
@@ -137,11 +154,13 @@
       }
 
       ::placeholder {
-        color: #e5e5e5;
+        color: #3e3e3e;
       }
 
+
+
       button {
-        margin-top: 30px; 
+        margin-top: 30px;
         width: 100%;
         background-color: #ffffff;
         color: #080710;
@@ -155,11 +174,17 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <a href="#" class="logo">iVoteNow</a>
-        </header>
-    </div>
+  <div class="container">
+    <header>
+        <a href="#" class="logo">iVoteNow</a>
+        <nav class="navigation">
+          <a href="#login.html">Login</a>
+          <a href="#signup.html">Sign-up</a>
+          <a href="#contactus.html">Contact Us</a>
+          <a href="#logout.html">Logout</a>
+        </nav>
+    </header>
+</div>
    
     <div>
         <form name="Registration">
